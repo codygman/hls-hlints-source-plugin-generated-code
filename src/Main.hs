@@ -1,6 +1,8 @@
 {-# OPTIONS_GHC -fplugin=Evoke #-}
 module Main where
 
+import           Data.Aeson
+
 data Person = Person
   { name :: String
   , age  :: Int
@@ -9,4 +11,4 @@ data Person = Person
 
 main :: IO ()
 main = do
-  putStrLn "hello world"
+  putStrLn . show . encode $ Person "bob" 55
