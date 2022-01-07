@@ -1,0 +1,4 @@
+- group:
+    name: witch
+    rules:
+      - warn: { lhs: Data.Text.pack, rhs: into @Text }

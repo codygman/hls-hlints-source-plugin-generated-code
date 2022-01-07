@@ -1,0 +1,3 @@
+cradle:
+  stack:
+    component: "hls-hlints-source-plugin-generated-code:exe:hls-hlints-source-plugin-generated-code"
